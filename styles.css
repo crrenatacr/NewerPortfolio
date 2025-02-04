@@ -5,7 +5,7 @@ body, ul, li {
 }
 
 body {
-  background: linear-gradient(135deg, #000000, #333333, #666666);
+  background: linear-gradient(90deg, rgba(1,0,15,1) 0%, rgba(170,49,49,1) 46%, rgba(208,205,205,1) 100%);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -167,6 +167,16 @@ body {
 .social-links a:hover {
   color: #333;
 }
+
+.cv {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  margin: 15px 0;
+  text-align: center;
+  color: #8d0707;
+}
+
 
 /* Fade-in animation */
 @keyframes fadeIn {
