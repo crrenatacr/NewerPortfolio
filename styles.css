@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 100vh; /* Make sure it covers the full height */
+  min-height: calc(100vh - 60px); /* Make sure it covers the full height */
   margin-top: 60px; /* Adjust to avoid overlapping the navbar */
   text-align: center;
 }
@@ -63,6 +63,7 @@ body {
   max-width: 1000px;
   padding-top: 20px; 
   margin: 0 auto; 
+  flex-grow: 1;
 }
 
 .box {
