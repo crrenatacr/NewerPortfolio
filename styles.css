@@ -29,6 +29,10 @@ body {
   left: 0;
   z-index: 10;
   padding: 15px 0;
+  height: 30px;
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally (optional) */
 }
 
 .navbar ul {
@@ -417,6 +421,7 @@ footer p {
 .skills-section {
   text-align: center;
   margin: 50px 0;
+  width: 100%;
 }
 
 .skills-section.skills-title {
@@ -439,7 +444,6 @@ footer p {
 
 /* Scroll Container */
 .scroll {
-  margin-top: 50px;
   margin-inline: auto;
   justify-content: center;
   max-width: 700px;
