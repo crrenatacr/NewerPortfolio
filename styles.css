@@ -444,9 +444,11 @@ footer p {
   justify-content: center;
   max-width: 700px;
   overflow: hidden; /* Impede transbordamento */
+  mask: linear-gradient(to right, transparent, grey 5%, grey 95%, transparent) ;
 }
 
-/* Container que envolve os itens */
+/* Skill Container */
+
 .scroll__container {
   display: flex;
   gap: 10px;
@@ -458,7 +460,8 @@ footer p {
   animation: scrollInfinite 10s linear infinite;
 }
 
-/* Itens individuais (quadradinhos) */
+/* Individual Items */
+
 .scroll__item {
   width: 100px; /* Largura fixa */
   height: 100px; /* Altura fixa */
