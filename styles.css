@@ -413,6 +413,7 @@ footer p {
  }
 
 .grid_contact {
+  background-color: transparent;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -421,7 +422,7 @@ footer p {
 }
 
 .grid_contact_item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -452,7 +453,7 @@ footer p {
   padding: 10px;
   margin-bottom: 15px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #4e0000;
   border-radius: 5px;
 }
 
