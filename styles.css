@@ -171,20 +171,25 @@ body {
 .connect-card {
   background: repeating-linear-gradient(45deg, #aa9595, #b2b2b2);
   color: rgb(0, 0, 0);
-  padding: 20px;
-  border-radius: 30px;
+  padding: 30px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  text-align: left;
   max-width: auto;
+  height: 200px;
   margin: 40px auto;
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  
+
+  /* Bordas suavemente onduladas */
+  -webkit-mask-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><path d='M0,15 Q10,5 20,15 T40,15 T60,15 T80,15 T100,15 T120,15 T140,15 T160,15 T180,15 T200,15 V85 Q190,95 180,85 T160,85 T140,85 T120,85 T100,85 T80,85 T60,85 T40,85 T20,85 T0,85 Z' fill='white'/></svg>");
+  mask-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><path d='M0,15 Q10,5 20,15 T40,15 T60,15 T80,15 T100,15 T120,15 T140,15 T160,15 T180,15 T200,15 V85 Q190,95 180,85 T160,85 T140,85 T120,85 T100,85 T80,85 T60,85 T40,85 T20,85 T0,85 Z' fill='white'/></svg>");
 }
+
 
 /* Animação ao passar o mouse */
 .connect-card:hover {
@@ -198,6 +203,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex: 1;
 }
 
 .arrow {
@@ -216,11 +222,20 @@ body {
   }
 }
 
+/* Container da seção direita */
+.connect-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
 /* Ícones sociais */
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .social-links a {
@@ -235,25 +250,15 @@ body {
 
 /* Botão do CV */
 .cv-button {
-  background: rgb(120, 119, 119);
-  color: #000000;
+  background: rgb(102, 3, 3);
+  color: #ffffff;
   padding: 10px 15px;
   border-radius: 10px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 15px;
   transition: background 0.3s, transform 0.2s;
-}
-
-.cv-button i {
-  font-size: 1.2rem;
-}
-
-.cv-button:hover {
-  background: #645c5c;
-  transform: scale(1.05);
 }
 
 /* Fade-in animation */
