@@ -134,6 +134,24 @@ body {
   animation: fadeIn 1s forwards;
 }
 
+.profile-img-wrapper {
+  perspective: 1000px; /* Aplica a perspectiva ao contêiner */
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 20px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: rotateY(15deg) rotateX(15deg) scale(1.05);
+}
+
 /* Vertical divider */
 .divider {
   width: 2px;
@@ -423,6 +441,7 @@ footer p {
 
 .grid_contact_item {
   background-color: transparent;
+
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -565,3 +584,5 @@ footer p {
    translate: calc(-50% - 5px);  
   }
  }
+
+ 
