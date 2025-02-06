@@ -512,6 +512,19 @@ footer p {
   width: 100%;
 }
 
+.skill-title {
+  display: block;
+  width: 100%; /* Ensures text takes full width */
+  max-width: 100px; /* Adjust as needed */
+  white-space: normal; /* Allows wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center; /* Optional */
+  font-size: 15px !important;
+  height: 36px;
+  margin-bottom: 10px !important;
+}
+
 .skills-section h1 {
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
