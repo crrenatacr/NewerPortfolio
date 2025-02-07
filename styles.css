@@ -5,11 +5,11 @@ body, ul, li {
 }
 
 body {
-  background: linear-gradient(90deg, rgb(142, 134, 134) 0%, rgb(172, 170, 170) 46%, rgb(142, 134, 134) 100%);;
+  background:  #2e2c2e;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #0c0c0c;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar ul li a {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -53,7 +53,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #840505;
+  color: #ff3d3d;
 }
 
 /* Container and Box styles */
@@ -96,7 +96,7 @@ body {
 }
 
 .name-gradient {
-  background: linear-gradient(90deg, #333, #693232, #2e2e2e);
+  background: linear-gradient(90deg, #f32828, #e38b8b, #f33636);
   -webkit-background-clip: text; 
   background-clip: text;
   color: transparent; 
@@ -104,7 +104,7 @@ body {
 
 .header-text h2 {
   font-size: 1.8rem;
-  color: #8d0707;
+  color: #ff3d3d;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -118,7 +118,7 @@ body {
 
 .profile-section p {
   font-family: "Montserrat", serif;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: large;
   text-shadow: #f7f4f4;
   text-align: justify;
@@ -154,7 +154,7 @@ body {
 /* Vertical divider */
 .divider {
   width: 2px;
-  background-color: #8d0707;
+  background-color: #ff3d3d;
   height: 250px;
   margin-left: 20px;
   margin-right: 20px;
@@ -172,7 +172,7 @@ body {
 
 .button {
   padding: 10px;
-  background-color: #8d0707;
+  background-color: #ff3d3d;
   color: white;
   border: none;
   border-radius: 5px;
@@ -181,13 +181,13 @@ body {
 }
 
 .button:hover {
-  background-color: #b40303;
+  background-color: #ff3d3d;
 }
 
 /* Animated Card */
 .connect-card {
   background: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 30px;
   
   display: flex;
@@ -222,7 +222,7 @@ body {
 .arrow {
   font-size: 3rem;
   animation: bounce 1s infinite alternate;
-  color: rgb(102, 3, 3);
+  color: #ff3d3d;
 }
 
 /* Arrow Animation */
@@ -252,7 +252,7 @@ body {
 }
 
 .social-links a {
-  color: rgb(102, 3, 3);
+  color: #ff3d3d;
   font-size: 2rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -263,7 +263,7 @@ body {
 
 /* CV Button */
 .cv-button {
-  background: rgb(102, 3, 3);
+  background: #ff3d3d;
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 10px;
@@ -318,15 +318,20 @@ body {
 
 #work h1 {
   font-size: xx-large ;
-    color:#8d0707;
+    color:#ff3d3d;
     text-align: left;
 }
 
 #work hr {
   border: none;
   height: 2px;
-  background-color: #4e0000;
+  background-color: #ff3d3d;
   width: 100%;
+}
+
+#work h3 {
+  font-size: medium;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .work .grid {
@@ -336,10 +341,11 @@ body {
 }
 
 .work .grid__item {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(186, 185, 185, 0.8);
+  color: #000000;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(116, 114, 114, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 250px; /* Ensures consistent height for cards */
   display: flex;
@@ -350,7 +356,7 @@ body {
 
 .work .grid__item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px rgba(174, 172, 172, 0.2);
 }
 
 .work .grid__item h2 {
@@ -365,7 +371,7 @@ body {
 
 /* Footer styles */
 footer {
-  background-color: #333;
+  background-color: #7b7a7a;
   color: white;
   padding: 20px 0;
   position: relative;
@@ -427,7 +433,7 @@ footer p {
 
  .contacthighlight {
   font-size: xx-large;
-  color: #980707;
+  color: #ff3d3d;
   font-family: "Montserrat", serif;
   text-align: center;
   justify-content: flex-end;
@@ -475,13 +481,13 @@ footer p {
   padding: 10px;
   margin-bottom: 15px;
   font-size: 1rem;
-  border: 1px solid #4e0000;
+  border: 1px solid #ff3d3d;
   border-radius: 5px;
 }
 
 .contact-form button {
   padding: 10px;
-  background-color: #8d0707;
+  background-color: #ff3d3d;
   color: white;
   border: none;
   border-radius: 5px;
@@ -490,7 +496,7 @@ footer p {
 }
 
 .contact-form button:hover {
-  background-color: #b40303;
+  background-color: #ff3d3d;
 }
 
 /* For mobile screens */
@@ -532,19 +538,19 @@ footer p {
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  color: #8d0707;
+  color: #ff3d3d;
 }
 
 .skills-section p {
   font-size: 1.2rem;
-  color: #000000;
+  color: #fffdfd;
   margin-bottom: 30px;
 }
 
 .skills-section hr {
   border: none;
   height: 2px;
-  background-color: #4e0000;
+  background-color: #ff3d3d;
   width: 100%;
 }
 
@@ -629,9 +635,9 @@ footer p {
   background-color: transparent;
   color: #000000;
   border-radius: 30%;
-  border-color:#8d0707;
+  border-color:#ff3d3d;
   border-style: dashed;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px rgba(161, 160, 160, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease-in-out;
@@ -640,7 +646,7 @@ footer p {
  .circles__item p {
   font-size: small;
   font-family: 'Montserrat', sans-serif;
-  color: black;
+  color: rgb(255, 254, 254);
   justify-content: center;
   align-items: center;
   word-wrap: break-word; 
