@@ -599,59 +599,66 @@ footer p {
   margin-inline: auto;
   justify-content: center;
   max-width: 700px;
-  overflow: hidden; /* Impede transbordamento */
-  mask: linear-gradient(to right, transparent, grey 5%, grey 95%, transparent) ;
+  overflow: hidden; /* No traspassing */
+  mask: linear-gradient(to right, transparent, grey 5%, grey 95%, transparent);
+  transition: all 0.3s ease; /* Eases transiction between states */
 }
 
 /* Skill Container */
-
 .scroll__container {
   display: flex;
   gap: 10px;
   width: max-content;
   justify-content: center;
-  overflow-x: auto; /* Habilita o scroll horizontal */
+  overflow-x: auto; /* Enables horizontal scroll */
   padding: 10px;
   scroll-behavior: smooth;
-  animation: scrollInfinite 10s linear infinite;
+  animation: scrollInfinite 10s linear infinite; /* Scroll animation */
+  transition: animation 0.3s ease-out; /* Eases the animation effect */
+}
+
+/* Pausa da animação no hover */
+.scroll:hover .scroll__container {
+  animation-play-state: paused; /* Stops scroll animation */
 }
 
 /* Individual Items */
-
 .scroll__item {
-  width: 100px; /* Largura fixa */
-  height: 100px; /* Altura fixa */
-  background-color: #f0f0f0; /* Cor de fundo dos quadrados */
-  border-radius: 10px; /* Bordas arredondadas */
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  background-color: #f0f0f0; /* square background */
+  border-radius: 10px; /* round borders */
   white-space: nowrap;
-  padding: 10px; /* Espaçamento interno para a imagem */
+  padding: 10px; /* Inside space for the items */
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  flex-shrink: 0; /* Impede que os itens encolham */
+  flex-shrink: 0; /* Items dont shrink */
 }
 
-/* Imagens dentro dos itens */
+
+/* Images inside the items */
 .scroll__item img {
-  width: 80px; /* Largura das imagens */
-  height: 80px; /* Altura das imagens */
-  object-fit: contain; /* Faz as imagens se ajustarem ao quadrado sem distorcer */
+  width: 80px; /* Image width */
+  height: 80px; /* Image height */
+  object-fit: contain; /* Adjust the image */
 }
 
-/* Estilo para rolagem horizontal */
+/* Horizontal scroll style */
 .scroll__container::-webkit-scrollbar {
-  display: none; /* Oculta a barra de rolagem */
+  display: none; /* No scroll bar */
 }
 
- @keyframes scrollInfinite {
+
+@keyframes scrollInfinite {
   from {
-    translate: 0;
+    transform: translateX(0);
   }
   to {
-   translate: calc(-50% - 5px);  
+    transform: translateX(calc(-50% - 5px));  
   }
- }
+}
 
  .circles {
   display: flex;
