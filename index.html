@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-    
 
     <!-- FontAwesome for icons -->
     <link
@@ -33,27 +32,27 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutme.html">About Me</a></li>
         <li><a href="https://crrenatacr.my.canva.site/">Project Section</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </header>
 
     <div class="container">
       <div class="box">
         <div class="header-text fade-slide-in">
-          <h1>Hi, I'm [Renata Hoffmann]</h1>
+          <h1>Hi, I'm <span class="name-gradient">Renata Hoffmann</span></h1>
           <h2>Web Developer</h2>
         </div>
 
         <section id="about" class="about-me fade-slide-in-delay">
           <div class="profile-section">
-            <div class="profile-img-wrapper"> <!-- Container for effect -->
+            <div class="profile-img-wrapper">
+              <!-- Container for effect -->
               <img
                 src="img/profile1.jpg"
                 alt="Profile Picture"
                 class="profile-img"
               />
             </div>
-          
+
             <div class="divider"></div>
             <p class="fade-slide-in">
               I’m a web development enthusiast with a background in psychology.
@@ -66,12 +65,15 @@
 
           <div class="connect-card">
             <div class="connect-text">
-              <p>Let's connect!</p>
+              <p>Let's connect !</p>
               <span class="arrow">➜</span>
             </div>
             <div class="connect-actions">
               <div class="social-links">
-                <a href="https://www.linkedin.com/in/crrenatacr" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/crrenatacr"
+                  target="_blank"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </div>
@@ -86,8 +88,45 @@
             </div>
           </div>
         </section>
+        <section class="circles">
+          <div class="circles__items">
+            <div class="circles__item">
+              <svg class="circle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" stroke="#8d0707" stroke-width="4" fill="none"/>
+                <path d="M32 15 L32 50 M22 40 L32 50 L42 40" stroke="#8d0707" stroke-width="4" fill="none"/>
+              </svg>
+              <p>I’m an aspiring web developer with a passion for continuous
+                learning. After earning a degree in Psychology and exploring various
+                fields like game and interior design, life led me to Germany, where
+                I focused on family.</p>
+            </div>
+        
+            <div class="circles__item">
+              <svg class="circle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" stroke="#8d0707" stroke-width="4" fill="none"/>
+                <path d="M32 15 L32 50 M22 40 L32 50 L42 40" stroke="#8d0707" stroke-width="4" fill="none"/>
+              </svg>
+              <p>Despite this, my drive for professional growth
+                never stopped. Now, through a Full Stack Web Development bootcamp,
+                I’m shifting my career to a field that excites me intellectually and
+                offers endless opportunities to grow.</p>
+            </div>
+        
+            <div class="circles__item">
+              <svg class="circle-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="32" cy="32" r="30" stroke="#8d0707" stroke-width="4" fill="none"/>
+                <path d="M32 15 L32 50 M22 40 L32 50 L42 40" stroke="#8d0707" stroke-width="4" fill="none"/>
+              </svg>
+              <p>I’m eager to enhance my new
+                knowledge in real-world scenarios and stablish my space as a
+                developer.</p>
+            </div>
+          </div>
+        </section>
+        
         <section class="skills-section skills-title">
-          <h1>[Skills]</h1>
+          <h1>Skills</h1>
+          <hr>
           <p>Here are some of the skills I've worked with:</p>
         </section>
 
@@ -127,7 +166,10 @@
               <div class="skill-card">
                 <p class="skill-title">TypeScript</p>
                 <div class="scroll__item" id="typescript">
-                  <img src="img/Typescript_logo_2020.svg.png" alt="TypeScript" />
+                  <img
+                    src="img/Typescript_logo_2020.svg.png"
+                    alt="TypeScript"
+                  />
                 </div>
               </div>
               <div class="skill-card">
@@ -183,7 +225,8 @@
         </section>
 
         <section class="work" id="work">
-          <h1>[My Projects]</h1>
+          <h1>My Projects</h1>
+          <hr>
           <h3>
             You can check a few of my projects linked and illustrated as
             follows:
@@ -203,6 +246,7 @@
               <a
                 href="https://github.com/crrenatacr/myFlix-client"
                 target="_blank"
+                class="button"
                 >Code</a
               >
             </div>
@@ -218,7 +262,9 @@
                 called Movieverse is also based on the existing server-side code
                 (REST API and database).
               </p>
-              <a href="https://github.com/crrenatacr/myFlix-Angular-client"
+              <a
+                href="https://github.com/crrenatacr/myFlix-Angular-client"
+                class="button"
                 >Code</a
               >
             </div>
@@ -236,7 +282,9 @@
                 API to fetch upcoming event and presents some charts with event
                 info.
               </p>
-              <a href="https://github.com/crrenatacr/meet">Code</a>
+              <a href="https://github.com/crrenatacr/meet" class="button"
+                >Code</a
+              >
             </div>
             <div class="grid__item">
               <h2>Pokedex</h2>
@@ -249,7 +297,11 @@
                 This is a JavaScript app built with HTML, CSS, and JavaScript,
                 which uses an external API
               </p>
-              <a href="https://github.com/crrenatacr/simple-js-app">Code</a>
+              <a
+                href="https://github.com/crrenatacr/simple-js-app"
+                class="button"
+                >Code</a
+              >
             </div>
             <div class="grid__item">
               <h2>React Native Chat App</h2>
@@ -263,7 +315,9 @@
                 provides provide users with a chat interface and options to
                 share images, their location and record audios.
               </p>
-              <a href="https://github.com/crrenatacr/chat-app">Code</a>
+              <a href="https://github.com/crrenatacr/chat-app" class="button"
+                >Code</a
+              >
             </div>
             <div class="grid__item">
               <h2>Movie API</h2>
@@ -279,40 +333,61 @@
                 update their personal information, and create a list of their
                 favorite movies.
               </p>
-              <a href="https://github.com/crrenatacr/movie_api">Code</a>
+              <a href="https://github.com/crrenatacr/movie_api" class="button"
+                >Code</a
+              >
             </div>
           </div>
         </section>
-        <section class= "contact-box" id="contact">
+        <section class="contact-box" id="contact">
           <div class="container">
-            
-              <!-- Contact Information -->
-              <div class="grid_contact">
-                <div class="grid_contact_item">
-                  <p>Germany</p>
-                  <a href="tel:+4915229145362">Tel: +49 15229145362</a><br />
-                  <a href="mailto:crrenatacr@gmail.com">Email: crrenatacr@gmail.com</a>
-                  <h1 class="contacthighlight">Let’s create something together !</h1>
-                </div>
-      
-                <!-- Contact Form -->
-                <div class="grid_contact_item contact-form">
-                  <form action="https://formspree.io/f/mgvvpgnv" method="POST" id="contact-form">
-                    <h3>Leave your message</h3>
-      
-                    <label for="contact-email" class="standart-label">Email</label><br />
-                    <input type="email" id="contact-email" name="email" required /><br />
-      
-                    <label for="contact-tel" class="standart-label">Telephone</label><br />
-                    <input type="tel" id="contact-tel" name="tel" /><br />
-      
-                    <label for="contact-message" class="standart-label">Message</label><br />
-                    <textarea id="contact-message" name="message" rows="5" required></textarea><br />
-      
-                    <button type="submit" class="submit-btn">Send Message</button>
-                  </form>
-                </div>
+            <!-- Contact Information -->
+            <div class="grid_contact">
+              <div class="grid_contact_item">
+                <p>Send me a message...</p>
+                <a href="tel:+4915229145362"></a><br />
+                <a href="mailto:crrenatacr@gmail.com"></a>
+                <h1 class="contacthighlight">Get in contact now !</h1>
               </div>
+
+              <!-- Contact Form -->
+              <div class="grid_contact_item contact-form">
+                <form
+                  action="https://formspree.io/f/mgvvpgnv"
+                  method="POST"
+                  id="contact-form"
+                >
+                  <h3>Leave your message</h3>
+
+                  <label for="contact-email" class="standart-label">Email</label
+                  ><br />
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                  /><br />
+
+                  <label for="contact-tel" class="standart-label"
+                    >Telephone</label
+                  ><br />
+                  <input type="tel" id="contact-tel" name="tel" /><br />
+
+                  <label for="contact-message" class="standart-label"
+                    >Message</label
+                  ><br />
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea
+                  ><br />
+
+                  <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -5,7 +5,7 @@ body, ul, li {
 }
 
 body {
-  background: linear-gradient(90deg, rgba(1,0,15,1) 0%, rgba(170,49,49,1) 46%, rgba(208,205,205,1) 100%);
+  background: linear-gradient(90deg, rgb(142, 134, 134) 0%, rgb(172, 170, 170) 46%, rgb(142, 134, 134) 100%);;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,16 +23,15 @@ body {
 /* Navbar styles */
 .navbar {
   width: 100%;
-  background-color: #000;
-  position: fixed;
+  background-color: transparent;
   top: 0;
   left: 0;
   z-index: 10;
   padding: 15px 0;
   height: 30px;
   display: flex;
-  align-items: center; /* Centers vertically */
-  justify-content: center; /* Centers horizontally (optional) test */
+  align-items: right; 
+  justify-content: right;
 }
 
 .navbar ul {
@@ -46,7 +45,7 @@ body {
 }
 
 .navbar ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -54,7 +53,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #e60000;
+  color: #840505;
 }
 
 /* Container and Box styles */
@@ -71,25 +70,18 @@ body {
 }
 
 .box {
-  background-color: rgba(211, 211, 211, 0.8);
+  background-color: transparent;
   padding: 50px;
   width: 100%;
   max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 4px 6px rgba(0, 0, 0, 0.2);
-}
 
 /* Header text styles (Name & Job Title) */
 .header-text {
@@ -101,6 +93,13 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   margin-bottom: 5px;
+}
+
+.name-gradient {
+  background: linear-gradient(90deg, #333, #693232, #2e2e2e);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
 }
 
 .header-text h2 {
@@ -135,7 +134,7 @@ body {
 }
 
 .profile-img-wrapper {
-  perspective: 1000px; /* Aplica a perspectiva ao contêiner */
+  perspective: 1000px; /* Container Perspective */
 }
 
 .profile-img {
@@ -185,12 +184,12 @@ body {
   background-color: #b40303;
 }
 
-/* Estilização do cartão animado */
+/* Animated Card */
 .connect-card {
-  background: repeating-linear-gradient(45deg, #aa9595, #b2b2b2);
+  background: transparent;
   color: rgb(0, 0, 0);
   padding: 30px;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -201,20 +200,16 @@ body {
   margin: 40px auto;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-
-  /* Bordas suavemente onduladas */
-  -webkit-mask-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><path d='M0,15 Q10,5 20,15 T40,15 T60,15 T80,15 T100,15 T120,15 T140,15 T160,15 T180,15 T200,15 V85 Q190,95 180,85 T160,85 T140,85 T120,85 T100,85 T80,85 T60,85 T40,85 T20,85 T0,85 Z' fill='white'/></svg>");
-  mask-image: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 100'><path d='M0,15 Q10,5 20,15 T40,15 T60,15 T80,15 T100,15 T120,15 T140,15 T160,15 T180,15 T200,15 V85 Q190,95 180,85 T160,85 T140,85 T120,85 T100,85 T80,85 T60,85 T40,85 T20,85 T0,85 Z' fill='white'/></svg>");
 }
+  
 
 
-/* Animação ao passar o mouse */
+/* Hover Animation */
 .connect-card:hover {
   transform: scale(1.05);
 }
 
-/* Estilo do texto e seta */
+/* Text and Arrow */
 .connect-text {
   font-size: 2rem;
   font-family: "Montserrat", serif;
@@ -230,7 +225,7 @@ body {
   color: rgb(102, 3, 3);
 }
 
-/* Animação da seta */
+/* Arrow Animation */
 @keyframes bounce {
   from {
     transform: translateX(0);
@@ -240,7 +235,7 @@ body {
   }
 }
 
-/* Container da seção direita */
+/* Right Hand Container */
 .connect-actions {
   display: flex;
   align-items: center;
@@ -248,7 +243,7 @@ body {
   justify-content: space-between;
 }
 
-/* Ícones sociais */
+/* Social Icons */
 .social-links {
   display: flex;
   gap: 15px;
@@ -266,7 +261,7 @@ body {
   transform: scale(1.2);
 }
 
-/* Botão do CV */
+/* CV Button */
 .cv-button {
   background: rgb(102, 3, 3);
   color: #ffffff;
@@ -323,7 +318,15 @@ body {
 
 #work h1 {
   font-size: xx-large ;
-    color:#8d0707
+    color:#8d0707;
+    text-align: left;
+}
+
+#work hr {
+  border: none;
+  height: 2px;
+  background-color: #4e0000;
+  width: 100%;
 }
 
 .work .grid {
@@ -441,11 +444,11 @@ footer p {
 
 .grid_contact_item {
   background-color: transparent;
+  justify-content: space-around;
 
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
+  }
 
 .grid_contact_item h2 {
   font-size: 2rem;
@@ -528,7 +531,7 @@ footer p {
 .skills-section h1 {
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
-  text-align: center;
+  text-align: left;
   color: #8d0707;
 }
 
@@ -536,6 +539,13 @@ footer p {
   font-size: 1.2rem;
   color: #000000;
   margin-bottom: 30px;
+}
+
+.skills-section hr {
+  border: none;
+  height: 2px;
+  background-color: #4e0000;
+  width: 100%;
 }
 
 
@@ -598,4 +608,79 @@ footer p {
   }
  }
 
- 
+ .circles {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ }
+
+ .circles__items {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+ }
+
+ .circles__item {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: transparent;
+  color: #000000;
+  border-radius: 30%;
+  border-color:#8d0707;
+  border-style: dashed;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+ }
+
+ .circles__item p {
+  font-size: small;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+ }
+
+ .circle-icon {
+  width: 80px; /* Ajuste conforme necessário */
+  height: 80px;
+  margin-bottom: 10px; /* Espaço entre o SVG e o texto */
+}
+
+ @keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.circles__item {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.circles__item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.circles__item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.circles__item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.circles__item:hover {
+  transform: rotate(10deg) scale(1.1);
+}
