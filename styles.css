@@ -725,5 +725,5 @@ footer p {
 }
 
 .circles__item:hover {
-  transform: rotate(10deg) scale(1.1);
+  transform: scale3d(1.1, 1.1, 1.2);
 }
