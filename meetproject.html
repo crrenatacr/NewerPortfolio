@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Renata Hoffmann - Portfolio</title>
+    <!-- Add Google Fonts for modern typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axe-core@4.3.0/axe.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <ul>
+        <li><a href="index.html">Back to home</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <div class="box">
+        <!-- Título com animação de entrada -->
+        <h1 class="animated-title">Globalgigs Meet App</h1>
+        <h2 class="subtitle">Case Study</h2>
+
+        <!-- Grid com 4 boxes -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="img/GlobalGigs1.jpg" alt="Imagem 1" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs2.jpg" alt="Imagem 2" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs3.jpg" alt="Imagem 3" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs4.jpg" alt="Imagem 4" onclick="openModal(this.src)" />
+          </div>
+        </div>
+
+        <!-- Box grande abaixo -->
+        <div class="large-box">
+          <div class="text-container">
+            <h2>About the project</h2>
+            <p>
+              This project is a serverless, progressive web application (PWA)
+              with React using a test-driven and behavior-driven development
+              (TDD/BDD) technique. The application uses the Google Calendar API
+              to fetch upcoming events and presents some charts with event info.
+            </p>
+            <h3>Overview</h3>
+            <p>
+              Globalgigs is a Progressive Web App (PWA), with FrontEnd developed
+              in React, with the ability to work offline and a serverless
+              backend developed using TDD and BDD techniques for unit,
+              integration and end-to-end testing. Users of this app are able to
+              use it whenever they want to view upcoming events for a specific
+              city. The application uses the Google Calendar API to fetch the
+              events of an specific calender and AWS Lambda functions to execute
+              authentication and authorization using the users Google account.
+            </p>
+            <h3>Purpose & Context</h3>
+            <p>
+              Globalgigs React Meet App was a personal project built as part of
+              my Full Stack Web Development course at CareerFoundry to enhance
+              my on-learning skills following best practices in programming.
+            </p>
+
+            <h3>Objective</h3>
+            <p>
+              The goal of this project was to develop a robust full-stack
+              application that enhances my portfolio while deepening my
+              understanding of integrating and optimizing various features
+              seamlessly.
+            </p>
+
+            <h3>Duration and credits</h3>
+            <p>
+              This project took longer than planned, as it wasn’t possible to
+              finish it on time for merging and debugging questions, which were
+              revised during and after with my course mentors, whom I thank for
+              all the time spent helping me with tips and decisive team work.
+            </p>
+          </div>
+          <img src="img/GlobalGigs5.jpg" alt="Imagem do projeto" onclick="openModal(this.src)" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para exibição da imagem ampliada -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+    <footer>
+      <p>&copy; 2025 [Renata Hoffmann]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
