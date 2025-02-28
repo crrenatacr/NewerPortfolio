@@ -1023,6 +1023,38 @@ footer p {
   margin-bottom: 10px; /* Adds some space between h2 and p */
 }
 
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Para espaçar as imagens igualmente */
+  margin-top: 20px; /* Adiciona espaço acima das imagens */
+}
+
+.image-container img {
+  width: 48%; /* Controla o tamanho das imagens para ficarem lado a lado */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 15px; /* Adiciona borda arredondada, similar à outra imagem */
+}
+
+.large-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(239, 235, 235, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.text-container {
+  flex: 1;
+  text-align: justify;
+  color: black;
+}
+
+
+
 /* Footer */
 footer {
   text-align: center;
@@ -1030,3 +1062,4 @@ footer {
   background-color: #333;
   color: white;
 }
+
