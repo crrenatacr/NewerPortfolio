@@ -11,7 +11,6 @@ window.onload = function () {
       profileWrapper.classList.add("reveal"); // Faz a cobertura desaparecer gradualmente
     }, 200); // Pequeno atraso para a animação parecer mais natural
   }
-};
 
   
     document.head.appendChild(script);
