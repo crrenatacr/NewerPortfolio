@@ -867,3 +867,166 @@ footer p {
   color: white;
   cursor: pointer;
 }
+
+
+/* Sliding Banners */
+.animation-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.animated-box {
+  position: absolute;
+  width: 280px;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  opacity: 0;
+}
+
+/* Animation: Left to Right */
+.left-to-right {
+  left: -300px;
+  animation: slideRight 2s ease-out forwards;
+}
+
+/* Animation: Right to Left */
+.right-to-left {
+  right: -300px;
+  animation: slideLeft 2s ease-out forwards;
+}
+
+/* Animation Keyframes */
+@keyframes slideRight {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 50%;
+    transform: translateX(50%);
+    opacity: 1;
+  }
+}
+
+
+
+/* Expanding Text Blocks */
+.text-animation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+/* Base Style for Both Blocks */
+.text-block {
+  position: absolute;
+  width: 40%;
+  height: 85%;
+  color: black;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-start; /* Flex-start to align text to the top */
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  flex-direction: column; /* Ensures h2 is above p */
+}
+
+/* Left Block - Light Gray */
+.left-block {
+  background-color: #d3d3d3;
+  left: -50%;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+  animation: expandLeft 2.5s ease-out forwards;
+}
+
+/* Right Block - Red */
+.right-block {
+  background-color: #d73030;
+  right: -50%;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  animation: expandRight 2.5s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align both h2 and p to the right */
+}
+
+/* Animation Keyframes */
+@keyframes expandLeft {
+  from {
+      left: -50%;
+      width: 40%;
+      opacity: 0;
+  }
+  to {
+      left: 5%;
+      width: 45%;
+      opacity: 1;
+  }
+}
+
+@keyframes expandRight {
+  from {
+      right: -50%;
+      width: 40%;
+      opacity: 0;
+  }
+  to {
+      right: 5%;
+      width: 45%;
+      opacity: 1;
+  }
+}
+
+/* Styling for the p text */
+.text-block p {
+  font-size: 1rem;
+  text-align: justify; /* Justifies the text */
+  line-height: 1.6;
+  max-width: 80%;
+  margin-top: 10px; /* Adds some space between the h2 and p */
+}
+
+/* Styling for the h2 in the right block */
+.right-block h3 {
+  text-align: right; /* Aligns the h2 to the right */
+  margin-bottom: 10px; /* Adds some space between h2 and p */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}

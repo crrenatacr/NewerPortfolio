@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Renata Hoffmann - Portfolio</title>
-    <!-- Add Google Fonts for modern typography -->
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap"
       rel="stylesheet"
@@ -15,7 +16,7 @@
       rel="stylesheet"
     />
 
-    <!-- FontAwesome for icons -->
+    <!-- FontAwesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -32,29 +33,40 @@
         <li><a href="index.html">Back to home</a></li>
       </ul>
     </header>
+
     <div class="container">
       <div class="box">
-        <!-- Título com animação de entrada -->
+        <!-- Title Section -->
         <h1 class="animated-title">Globalgigs Meet App</h1>
-        <h2 class="subtitle">Case Study</h2>
+       
 
-        <!-- Grid com 4 boxes -->
-        <div class="grid-container">
-          <div class="grid-item">
-            <img src="img/GlobalGigs1.jpg" alt="Imagem 1" onclick="openModal(this.src)" />
+        <!-- Sliding Banners -->
+        <div class="animation-container">
+          <div class="animated-box left-to-right">
+            <p>Case Study</p>
           </div>
-          <div class="grid-item">
-            <img src="img/GlobalGigs2.jpg" alt="Imagem 2" onclick="openModal(this.src)" />
-          </div>
-          <div class="grid-item">
-            <img src="img/GlobalGigs3.jpg" alt="Imagem 3" onclick="openModal(this.src)" />
-          </div>
-          <div class="grid-item">
-            <img src="img/GlobalGigs4.jpg" alt="Imagem 4" onclick="openModal(this.src)" />
+          <div class="animated-box right-to-left">
+            <p>Case Study</p>
           </div>
         </div>
 
-        <!-- Box grande abaixo -->
+        <!-- Image Grid -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="img/GlobalGigs1.jpg" alt="Project Screenshot 1" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs2.jpg" alt="Project Screenshot 2" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs3.jpg" alt="Project Screenshot 3" onclick="openModal(this.src)" />
+          </div>
+          <div class="grid-item">
+            <img src="img/GlobalGigs4.jpg" alt="Project Screenshot 4" onclick="openModal(this.src)" />
+          </div>
+        </div>
+
+        <!-- Project Description -->
         <div class="large-box">
           <div class="text-container">
             <h2>About the project</h2>
@@ -66,51 +78,76 @@
             </p>
             <h3>Overview</h3>
             <p>
-              Globalgigs is a Progressive Web App (PWA), with FrontEnd developed
-              in React, with the ability to work offline and a serverless
-              backend developed using TDD and BDD techniques for unit,
-              integration and end-to-end testing. Users of this app are able to
-              use it whenever they want to view upcoming events for a specific
-              city. The application uses the Google Calendar API to fetch the
-              events of an specific calender and AWS Lambda functions to execute
-              authentication and authorization using the users Google account.
+              Globalgigs is a Progressive Web App (PWA), with a front-end developed
+              in React, with offline capabilities and a serverless
+              backend. It follows TDD and BDD techniques for unit,
+              integration, and end-to-end testing. Users can check upcoming events 
+              for a specific city. The application uses the Google Calendar API 
+              and AWS Lambda functions for authentication and authorization via Google.
             </p>
             <h3>Purpose & Context</h3>
             <p>
-              Globalgigs React Meet App was a personal project built as part of
-              my Full Stack Web Development course at CareerFoundry to enhance
-              my on-learning skills following best practices in programming.
+              Globalgigs React Meet App was built as part of my
+              Full Stack Web Development course at CareerFoundry to strengthen 
+              my learning process while following best programming practices.
             </p>
 
             <h3>Objective</h3>
             <p>
-              The goal of this project was to develop a robust full-stack
-              application that enhances my portfolio while deepening my
-              understanding of integrating and optimizing various features
-              seamlessly.
+              The goal of this project was to develop a full-stack
+              application that enhances my portfolio while improving my
+              ability to integrate and optimize multiple features seamlessly.
             </p>
 
             <h3>Duration and credits</h3>
             <p>
-              This project took longer than planned, as it wasn’t possible to
-              finish it on time for merging and debugging questions, which were
-              revised during and after with my course mentors, whom I thank for
-              all the time spent helping me with tips and decisive team work.
+              This project took longer than expected due to merging 
+              and debugging challenges, which were addressed with 
+              guidance from my course mentors. I deeply appreciate their 
+              support and teamwork throughout the process.
             </p>
           </div>
-          <img src="img/GlobalGigs5.jpg" alt="Imagem do projeto" onclick="openModal(this.src)" />
+          <img src="img/GlobalGigs5.jpg" alt="Project Overview Image" onclick="openModal(this.src)" />
         </div>
       </div>
     </div>
 
-    <!-- Modal para exibição da imagem ampliada -->
+     <!-- Expanding Text Blocks -->
+<div class="text-animation-container">
+    <div class="text-block left-block">
+        <h3>Challenges along the way...</h3>
+        <p>
+            When I set out to build the Meet App, I envisioned an exciting full-stack project that would sharpen my skills and elevate my portfolio. 
+            What I didn’t anticipate was just how challenging it would be. The code was dense, complex, and required handling authentication and authorization with tokens, 
+            which proved to be a constant source of frustration. Built with React, the project followed a strict TDD and BDD approach, making the testing process feel like an 
+            insurmountable mountain, once something else, something essential, was still not working properly.              
+            Despite my efforts, debugging became an endless cycle, and I often felt like I was chasing ghosts in my code. I had a lot of code and no events being fetched to show my users.
+        </p>
+    </div>
+    <div class="text-block right-block">
+        <h3>...overcoming the Chaos: A Developer’s Journey
+            with Meet App</h3>
+        <p>
+            At one point, I hit a major roadblock: Google kept blocking access to my page, and I couldn’t figure out why. I spent hours, days—even weeks—debugging until I reached my breaking point. 
+            Exhausted, I stepped away from the project, choosing to focus on other developments before returning with fresh eyes. When I finally revisited the app, I combed through every detail, determined to uncover the root  of the problem. And there it was—a single duplicated line of code messing up the token handling  and triggering the access block. After fixing it, the authentication system finally worked, and the app came to life as intended.     
+      This project wasn’t just about building an event app; it was a trial by fire that tested my resilience as a developer. In the end, I didn’t just complete the Meet App—I conquered it. 
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+    <!-- Modal for Enlarged Images -->
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
       <img class="modal-content" id="modalImage">
     </div>
 
     <footer>
-      <p>&copy; 2025 [Renata Hoffmann]. All rights reserved.</p>
+      <p>&copy; 2025 Renata Hoffmann. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
