@@ -1063,3 +1063,17 @@ footer {
   color: white;
 }
 
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  width: 100vw; /* Ocupa toda a largura da tela */
+}
+
+video {
+  width: 100%; /* Ajusta o tamanho do vídeo */
+  max-width: 1000px; /* Define um limite máximo */
+  border: #d73030 2px solid; 
+  border-radius: 5%;
+}
