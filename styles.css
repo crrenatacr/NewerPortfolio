@@ -175,11 +175,28 @@ body {
   opacity: 0;
   animation: fadeIn 1s forwards;
   transition: transform 0.5s ease;
+transform-style: preserve-3d;
+  --s: 250px;   /* the size of the image */
+  --b: 8px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #4ECDC4; /* the color */
+  
+  width: var(--s);
+  aspect-ratio: 1;
+  outline: calc(var(--s)/2) solid #0009;
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
 }
 
-.profile-img:hover {
-  transform: rotateY(15deg) rotateX(15deg) scale(1.05);
+img + img {
+  border-radius: 50%;
 }
+
 
 /* Vertical divider */
 .divider {
@@ -1341,3 +1358,9 @@ footer {
 			width: 250px;
 		}
 	}
+
+  .chat-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+  }

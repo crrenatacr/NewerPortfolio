@@ -39,129 +39,139 @@
         <!-- Title Section -->
         <h1 class="animated-title">React Chat App</h1>
 
-    
-
-        <!-- Image Grid -->
-        <div class="grid-container">
-          <div class="grid-item">
-            <img
-              src="img/portfolio2.jpg"
-              alt="Project Screenshot 1"
-              onclick="openModal(this.src)"
-            />
-          </div>
-          <div class="large-box video-box">
-            <video autoplay loop muted>
-              <source src="media/chatapp.mp4" type="video/mp4" />
-          
-            </video>
-          </div>
-
-       </div>
+        <div class="chat-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            viewBox="0 0 512 512"
+            id="chat"
+          >
+            <linearGradient
+              id="a"
+              x1="80.941"
+              x2="432.182"
+              y1="403.63"
+              y2="52.389"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#fcc60e"></stop>
+              <stop offset="1" stop-color="#e92e29"></stop>
+            </linearGradient>
+            <path
+              fill="url(#a)"
+              d="M457.109 102.263h-25.137V74.88c0-30.267-24.624-54.891-54.891-54.891H54.891C24.624 19.989 0 44.613 0 74.88v219.03c0 30.267 24.624 54.891 54.891 54.891h27.472v52.937a8.002 8.002 0 0 0 7.998 8 8 8 0 0 0 5.809-2.497l55.385-58.439h25.272v27.383c0 30.267 24.624 54.891 54.891 54.891h128.729l55.385 58.439a7.998 7.998 0 0 0 8.769 1.929 8.001 8.001 0 0 0 5.038-7.432v-52.937h27.472c30.267 0 54.891-24.624 54.891-54.891v-219.03c-.002-30.267-24.626-54.891-54.893-54.891zM148.113 332.801a8.002 8.002 0 0 0-5.807 2.497l-43.944 46.368v-40.865a8 8 0 0 0-8-8H54.891C33.446 332.801 16 315.354 16 293.91V74.88c0-21.444 17.446-38.891 38.891-38.891h322.191c21.444 0 38.891 17.446 38.891 38.891v219.03c0 21.444-17.446 38.891-38.891 38.891H148.113zM496 376.184c0 21.444-17.446 38.891-38.891 38.891h-35.472a8 8 0 0 0-8 8v40.865l-43.944-46.368a8 8 0 0 0-5.807-2.497h-132.17c-21.444 0-38.891-17.446-38.891-38.891v-27.383h184.256c30.267 0 54.891-24.624 54.891-54.891V118.263h25.137c21.444 0 38.891 17.446 38.891 38.891v219.03zM361.83 118.438a8 8 0 0 1-8 8H78.143a8 8 0 0 1 0-16H353.83c4.418 0 8 3.583 8 8zm0 65.957a8 8 0 0 1-8 8H194.87a8 8 0 0 1 0-16h158.96a8 8 0 0 1 8 8zm-199.767 0a8 8 0 0 1-8 8h-75.92a8 8 0 0 1 0-16h75.921a8 8 0 0 1 7.999 8zm0 65.956a8 8 0 0 1-8 8h-75.92a8 8 0 0 1 0-16h75.921a8 8 0 0 1 7.999 8zm100.595 0a8 8 0 0 1-8 8H194.87a8 8 0 0 1 0-16h59.788a8 8 0 0 1 8 8zm99.172 0a8 8 0 0 1-8 8h-62.635a8 8 0 0 1 0-16h62.635a8 8 0 0 1 8 8z"
+            ></path>
+          </svg>
+        </div>
+    </div>
 
         <!-- Project Description -->
         <div class="large-box">
           <div class="text-container">
             <h2>Overview</h2>
             <p>
-                Built a simple yet fully functional chat app using React Native. 
-                The goal? Allow users to send text messages, record audio, and
-                 take pictures with a camera—all in one smooth experience.
+              Built a simple yet fully functional chat app using React Native.
+              The goal? Allow users to send text messages, record audio, and
+              take pictures with a camera—all in one smooth experience.
             </p>
 
             <h3>About the project</h3>
             <p>
-                Chat App is a mobile messaging application built with React Native and Expo,
-                 designed for real-time communication. The app allows users to chat with friends
-                  and family, share images, and exchange location data. It also features 
-                  offline message reading, making it a reliable communication tool. The app
-                   ensures accessibility for users with visual impairments by supporting
-                    screen readers.
-            </p>
-            
-            <h3>Purpose & Context</h3>
-            <p>
-                Chat apps are everywhere, but I wanted to build my own—because why not? The goal was to create a smooth,
-                 modern messaging app using React Native with text, audio, and photo-sharing capabilities.
-                  Oh, and I wanted to keep things simple while learning more about navigation, permissions, and Expo’s 
-                  magic tricks. Also, it was a very important topic of my Full Stack Web Development Course. 
+              Chat App is a mobile messaging application built with React Native
+              and Expo, designed for real-time communication. The app allows
+              users to chat with friends and family, share images, and exchange
+              location data. It also features offline message reading, making it
+              a reliable communication tool. The app ensures accessibility for
+              users with visual impairments by supporting screen readers.
             </p>
 
+            <h3>Purpose & Context</h3>
+            <p>
+              Chat apps are everywhere, but I wanted to build my own—because why
+              not? The goal was to create a smooth, modern messaging app using
+              React Native with text, audio, and photo-sharing capabilities. Oh,
+              and I wanted to keep things simple while learning more about
+              navigation, permissions, and Expo’s magic tricks. Also, it was a
+              very important topic of my Full Stack Web Development Course.
+            </p>
 
             <h3>Objective</h3>
             <p>
-                Develop a fully functional chat app that allows users to: <br><br>
-                ✔ Send and receive text messages <br>
-                ✔ Record and send voice messages<br>
-                ✔ Capture and share photos<br>
-                ✔ Seamlessly navigate between screens</p>
-                
-              <p>  All while keeping the app lightweight, smooth, and (hopefully) crash-free.
+              Develop a fully functional chat app that allows users to:
+              <br /><br />
+              ✔ Send and receive text messages <br />
+              ✔ Record and send voice messages<br />
+              ✔ Capture and share photos<br />
+              ✔ Seamlessly navigate between screens
+            </p>
+
+            <p>
+              All while keeping the app lightweight, smooth, and (hopefully)
+              crash-free.
             </p>
 
             <h3>Duration and credits</h3>
             <p>
-              This project took longer than expected due to merging and
-              debugging challenges, which were addressed with guidance from my
-              course mentors. I deeply appreciate their support and teamwork
-              throughout the process.
+              This project was actually pretty quick, as everything ran as
+              smooth as expected and it was a lot of fun to make it! Again, I
+              need to thank my tutor and one of my dear friends.
             </p>
           </div>
-          
         </div>
 
         <!-- Seção "The Code" -->
-  <div class="large-box">
-    <div class="text-container">
-      <h2>The Code</h2>
+        <div class="large-box">
+          <div class="text-container">
+            <h2>The Code</h2>
 
-      <h3>Key Features</h3>
-      <li>Filter Events by City</li>
-      <li>Show/Hide Event Details</li>
-      <li>Specify Number of Events</li>
-      <li>Use the App When Offline</li>
-      <li>Add an App Shortcut to the Home Screen Of The Users Device</li>
-      <li>Display Charts Visualizing Event Details</li>
+            <h3>Key Features</h3>
+            <li>Written in React Native</li>
+            <li>Developed using Expo</li>
+            <li>Stored in Google Firestore Database</li>
+            <li>
+              Authenticates users anonymously via Google Firebase authentication
+            </li>
+            <li>Chat conversations are stored locally</li>
+            <li>
+              Users can pick and send images from the phone’s image library
+            </li>
+            <li>
+              Users can take pictures with the device’s camera app, and send
+              them
+            </li>
+            <li>Stores images in Firebase Cloud Storage.</li>
+            <li>The app is be able to read the user’s location data</li>
+            <li>Location data can be sent via the chat in a map view</li>
+            <li>
+              Interface and functionality created using the Gifted Chat library
+            </li>
 
-      <h3>Technical Requirements</h3>
-      <li>React application</li>
-      <li>TDD technique</li>
-      <li>Google Calendar API and OAuth2 authentication</li>
-      <li>Serverless functions (AWS Lambda preferred)</li>
-      <li>Code hosted on GitHub</li>
-      <li>
-        Compatibility with latest versions of Chrome, Firefox, Safari,
-        Edge, Opera, and IE11
-      </li>
-      <li>Responsive design</li>
-      <li>PWA compliance and offline functionality</li>
-      <li>Deploy on GitHub Pages</li>
-      <li>OOP alert system</li>
-      <li>Data visualization</li>
-      <li>90%+ test coverage</li>
-      <li>Online performance monitoring</li>
+            <h2> Challenges & Solutions</h2>
+
+            <p> This project went surprisingly smoothly, but a few things required extra attention:
+                
+                    <li>Navigation: Used React Navigation to keep screen transitions intuitive.</li>
+                    <li> Audio Recording: Integrated Expo-AV with a clean permission flow—no silent recordings!</li>
+                    <li> Camera Access: Implemented Expo Camera with a simple, user-friendly permission request.</li>
+                
+                Expo made everything straightforward—no native code headaches, just plug-and-play with the right libraries.
+
+
+
+
+              The biggest challenge was coping constantly with Expo's versions,
+              as my app was created demanding one specific version.
+            </p>
+          </div>
+          <div class="chat-video">
+            <video autoplay loop muted>
+              <source src="media/chatapp.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-
-         <!-- Imagens -->
-  <div class="image-container">
-    <img
-      src="img/GlobalGigs6.jpg"
-      alt="Project Overview Image"
-      onclick="openModal(this.src)"
-    />
-    <img
-      src="img/GlobalGigs7.jpg"
-      alt="Project Overview Image"
-      onclick="openModal(this.src)"
-    />
-  </div>
-</div>
-    </div>
-
-
-    
     <!-- Modal for Enlarged Images -->
     <div id="imageModal" class="modal">
       <span class="close" onclick="closeModal()">&times;</span>
