@@ -208,10 +208,13 @@ body {
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
-  background-color: #ff3d3d;
+  background-color: #ff5c5c; 
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 /* Animated Card */
@@ -293,6 +296,9 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  border-color: #d73030;
+  border-style: groove;
+  border-width: 5px;
 
 }
 
@@ -347,9 +353,27 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.botoesgambi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+    
+}
+
+.work .grid__item img {
+  width: 200px; /* Ajuste conforme necessário */
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border-color: #d73030;
+  border-style: groove;
+  border-width: 5px;
+}
+
 .work .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensures items are flexible but never smaller than 300px */
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Ensures items are flexible but never smaller than 300px */
   gap: 20px;
 }
 
@@ -364,7 +388,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
   position: relative;
+}
+
+.work .grid__item .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
 }
 
 .work .grid__item:hover {
@@ -375,11 +409,15 @@ body {
 .work .grid__item h2 {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .work .grid__item p {
   font-size: 1rem;
   line-height: 1.5;
+  text-align: justify;
+  flex: 1;
 }
 
 /* Footer styles */

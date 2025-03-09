@@ -44,22 +44,29 @@
           <div class="grid">
             <div class="grid__item">
               <h2>Client-Side React Movie App</h2>
-              <img
-                src="img/myFlixnetlify.jpg"
-                alt="Imagem do portfolio 5"
-                class="portfolio-image"
-              />
-              <p>
-                Client-side for an app called myFlix based on its existing
-                server-side code (REST API and database).
-              </p>
-              <a
-                href="https://github.com/crrenatacr/myFlix-client"
-                target="_blank"
-                class="button"
-                >Code</a
-              >
-              <a href="project6-details.html" class="button">Project Details</a>
+              <div class="content">
+                <p>
+                  Client-side for an app called myFlix based on its existing
+                  server-side code (REST API and database).
+                </p>
+                <img
+                  src="img/myFlixnetlify.jpg"
+                  alt="Imagem do portfolio 5"
+                  class="portfolio-image"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/myFlix-client"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="project6-details.html" class="button"
+                  >Project Details</a
+                >
+              </div>
             </div>
             <div class="grid__item">
               <h2>Angular Movieverse App</h2>
@@ -67,18 +74,24 @@
                 src="img/movieverseAngular.jpg"
                 alt="Imagem do portfolio 6"
                 class="portfolio-image"
+                onclick="openModal(this.src)"
               />
               <p>
                 Using Angular and Typescript, this client-side application
                 called Movieverse is also based on the existing server-side code
                 (REST API and database).
               </p>
-              <a
-                href="https://github.com/crrenatacr/myFlix-Angular-client"
-                class="button"
-                >Code</a
-              >
-              <a href="project6-details.html" class="button">Project Details</a>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/myFlix-client"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="project6-details.html" class="button"
+                  >Project Details</a
+                >
+              </div>
             </div>
             <div class="grid__item">
               <h2>Globalgigs React Meet App</h2>
@@ -86,6 +99,7 @@
                 src="img/portfolio1.jpeg"
                 alt="Imagem do portfolio 1"
                 class="portfolio-image"
+                onclick="openModal(this.src)"
               />
               <p>
                 This project is a serverless, progressive web application (PWA)
@@ -94,10 +108,15 @@
                 API to fetch upcoming event and presents some charts with event
                 info.
               </p>
-              <a href="https://github.com/crrenatacr/meet" class="button"
-                >Code</a
-              >
-              <a href="meetproject.html" class="button">Project Details</a>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/meet"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="meetproject.html" class="button">Project Details</a>
+              </div>
             </div>
             <div class="grid__item">
               <h2>Pokedex</h2>
@@ -105,17 +124,23 @@
                 src="img/pokedex.jpg"
                 alt="Imagem do portfolio 4"
                 class="portfolio-image"
+                onclick="openModal(this.src)"
               />
               <p>
                 This is a JavaScript app built with HTML, CSS, and JavaScript,
                 which uses an external API
               </p>
-              <a
-                href="https://github.com/crrenatacr/simple-js-app"
-                class="button"
-                >Code</a
-              >
-              <a href="meetproject.html" class="button">Project Details</a>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/myFlix-client"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="project6-details.html" class="button"
+                  >Project Details</a
+                >
+              </div>
             </div>
             <div class="grid__item">
               <h2>React Native Chat App</h2>
@@ -123,16 +148,24 @@
                 src="img/nativeExpo1.jpg"
                 alt="Imagem do portfolio 2"
                 class="portfolio-image"
+                onclick="openModal(this.src)"
               />
               <p>
                 Chat app for mobile devices built using React Native. The app
                 provides provide users with a chat interface and options to
                 share images, their location and record audios.
               </p>
-              <a href="https://github.com/crrenatacr/chat-app" class="button"
-                >Code</a
-              >
-              <a href="meetproject.html" class="button">Project Details</a>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/myFlix-client"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="project6-details.html" class="button"
+                  >Project Details</a
+                >
+              </div>
             </div>
             <div class="grid__item">
               <h2>Movie API</h2>
@@ -148,14 +181,27 @@
                 update their personal information, and create a list of their
                 favorite movies.
               </p>
-              <a href="https://github.com/crrenatacr/movie_api" class="button"
-                >Code</a
-              >
-              <a href="project6-details.html" class="button">Project Details</a>
+              <div>
+                <a
+                  href="https://github.com/crrenatacr/myFlix-client"
+                  target="_blank"
+                  class="button"
+                  >Code</a
+                >
+                <a href="project6-details.html" class="button"
+                  >Project Details</a
+                >
+              </div>
             </div>
           </div>
         </section>
       </div>
+    </div>
+
+    <!-- Modal for Enlarged Images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
     </div>
 
     <footer>
