@@ -1045,6 +1045,7 @@ footer p {
   border-radius: 15px;
   margin-top: 30px;
   position: relative;
+  box-shadow: #d3d3d3;
 }
 
 .text-container {
@@ -1063,17 +1064,52 @@ footer {
   color: white;
 }
 
-.video-container {
+/* Centraliza tudo e limita a largura */
+.content-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaço entre as divs */
+  margin: 0 auto; /* Mantém no centro horizontal */
+  max-width: 1200px; /* Limita a largura total */
+  min-height: 80vh; /* Centraliza verticalmente */
+}
+
+/* Estilo da div "The Code" */
+.code-box {
+  flex: 1;
+  max-width: 40%; /* Ocupa 40% do espaço */
+  height: 400px; /* Mesma altura da div do vídeo */
+  background: #d3d3d3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  width: 100vw; /* Ocupa toda a largura da tela */
+  text-align: center;
 }
 
-video {
-  width: 100%; /* Ajusta o tamanho do vídeo */
-  max-width: 1000px; /* Define um limite máximo */
-  border: #d73030 2px solid; 
-  border-radius: 5%;
+/* Estilo da div do vídeo */
+.video-box {
+  flex: 1.3; /* Faz a div do vídeo um pouco maior */
+  max-width: 65%; /* Ocupa mais espaço horizontalmente */
+  height: 400px; /* Mesma altura da div "The Code" */
+  background: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Ajusta o vídeo para preencher a div */
+.video-box video {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
