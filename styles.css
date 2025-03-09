@@ -353,16 +353,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
-.botoesgambi {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-    
-}
-
 .work .grid__item img {
   width: 200px; /* Ajuste conforme necessário */
   height: 200px;
