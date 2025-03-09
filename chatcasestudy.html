@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Renata Hoffmann - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axe-core@4.3.0/axe.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <ul>
+        <li><a href="index.html">Back to home</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="box">
+        <!-- Title Section -->
+        <h1 class="animated-title">React Chat App</h1>
+
+    
+
+        <!-- Image Grid -->
+        <div class="grid-container">
+          <div class="grid-item">
+            <img
+              src="img/portfolio2.jpg"
+              alt="Project Screenshot 1"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="large-box video-box">
+            <video autoplay loop muted>
+              <source src="media/chatapp.mp4" type="video/mp4" />
+          
+            </video>
+          </div>
+
+       </div>
+
+        <!-- Project Description -->
+        <div class="large-box">
+          <div class="text-container">
+            <h2>Overview</h2>
+            <p>
+                Built a simple yet fully functional chat app using React Native. 
+                The goal? Allow users to send text messages, record audio, and
+                 take pictures with a camera—all in one smooth experience.
+            </p>
+
+            <h3>About the project</h3>
+            <p>
+                Chat App is a mobile messaging application built with React Native and Expo,
+                 designed for real-time communication. The app allows users to chat with friends
+                  and family, share images, and exchange location data. It also features 
+                  offline message reading, making it a reliable communication tool. The app
+                   ensures accessibility for users with visual impairments by supporting
+                    screen readers.
+            </p>
+            
+            <h3>Purpose & Context</h3>
+            <p>
+                Chat apps are everywhere, but I wanted to build my own—because why not? The goal was to create a smooth,
+                 modern messaging app using React Native with text, audio, and photo-sharing capabilities.
+                  Oh, and I wanted to keep things simple while learning more about navigation, permissions, and Expo’s 
+                  magic tricks. Also, it was a very important topic of my Full Stack Web Development Course. 
+            </p>
+
+
+            <h3>Objective</h3>
+            <p>
+                Develop a fully functional chat app that allows users to: <br><br>
+                ✔ Send and receive text messages <br>
+                ✔ Record and send voice messages<br>
+                ✔ Capture and share photos<br>
+                ✔ Seamlessly navigate between screens</p>
+                
+              <p>  All while keeping the app lightweight, smooth, and (hopefully) crash-free.
+            </p>
+
+            <h3>Duration and credits</h3>
+            <p>
+              This project took longer than expected due to merging and
+              debugging challenges, which were addressed with guidance from my
+              course mentors. I deeply appreciate their support and teamwork
+              throughout the process.
+            </p>
+          </div>
+          
+        </div>
+
+        <!-- Seção "The Code" -->
+  <div class="large-box">
+    <div class="text-container">
+      <h2>The Code</h2>
+
+      <h3>Key Features</h3>
+      <li>Filter Events by City</li>
+      <li>Show/Hide Event Details</li>
+      <li>Specify Number of Events</li>
+      <li>Use the App When Offline</li>
+      <li>Add an App Shortcut to the Home Screen Of The Users Device</li>
+      <li>Display Charts Visualizing Event Details</li>
+
+      <h3>Technical Requirements</h3>
+      <li>React application</li>
+      <li>TDD technique</li>
+      <li>Google Calendar API and OAuth2 authentication</li>
+      <li>Serverless functions (AWS Lambda preferred)</li>
+      <li>Code hosted on GitHub</li>
+      <li>
+        Compatibility with latest versions of Chrome, Firefox, Safari,
+        Edge, Opera, and IE11
+      </li>
+      <li>Responsive design</li>
+      <li>PWA compliance and offline functionality</li>
+      <li>Deploy on GitHub Pages</li>
+      <li>OOP alert system</li>
+      <li>Data visualization</li>
+      <li>90%+ test coverage</li>
+      <li>Online performance monitoring</li>
+    </div>
+  </div>
+
+
+         <!-- Imagens -->
+  <div class="image-container">
+    <img
+      src="img/GlobalGigs6.jpg"
+      alt="Project Overview Image"
+      onclick="openModal(this.src)"
+    />
+    <img
+      src="img/GlobalGigs7.jpg"
+      alt="Project Overview Image"
+      onclick="openModal(this.src)"
+    />
+  </div>
+</div>
+    </div>
+
+
+    
+    <!-- Modal for Enlarged Images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Renata Hoffmann. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
