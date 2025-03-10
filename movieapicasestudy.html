@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Renata Hoffmann - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axe-core@4.3.0/axe.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <ul>
+        <li><a href="index.html">Back to home</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="box">
+        <!-- Title Section -->
+        <h1 class="animated-title">Movie API</h1>
+
+        <!-- Sliding Banners -->
+        <div class="animation-container">
+          <div class="animated-box left-to-right">
+            <p>Case Study</p>
+          </div>
+          <div class="animated-box right-to-left">
+            <p>Case Study</p>
+          </div>
+        </div>
+
+        <!-- Imagens -->
+        <div class="image-container">
+          <img
+            src="img/Postman.jpg"
+            alt="Project Overview Image"
+            onclick="openModal(this.src)"
+          />
+          <img
+            src="img/movieapi2.jpg"
+            alt="Project Overview Image"
+            onclick="openModal(this.src)"
+          />
+        </div>
+      </div>
+
+      <!-- Project Description -->
+      <div class="large-box">
+        <div class="text-container">
+          <h2>Overview</h2>
+          <p>
+            This was the first API I have ever built and it's a Movie API that
+            provides access to information about different movies, directors,
+            and genres. Users can sign up, update their personal information,
+            and list their favorite movies. The API is built with Node.js and
+            uses MongoDB for data storage.
+          </p>
+
+          <h3>Purpose & Context</h3>
+          <p>
+            It’s no longer enough for a JavaScript developer to be skilled in
+            frontend development alone. It’s become essential that you be able
+            to interface with and even create your own APIs. For this reason, I
+            had to learn how to create a REST API for an application called
+            “myFlix” that interacts with a database that stores data about
+            different movies.
+          </p>
+
+          <h3>Objective</h3>
+          <p>
+            The objective was to learn and build the server-side component of a
+            “movies” web application. The web application had to provide users
+            with access to information about different movies, directors, and
+            genres. Users had to be able to sign up, update their personal
+            information, and create a list of their favorite movies.
+          </p>
+
+          <h3>Duration and credits</h3>
+          <p>
+            It took a bit more than I expected, because I needed better
+            understanding of authentication and authorization problems and how
+            to articulate the use of Postman to check my endpoints, which is
+            vital in this project (and also in so many others). Here I can once
+            more remember to give a big thanks to my previously mentioned
+            friend, who has been with me all along, and also my mentor, who
+            helped me a bit with Postman.
+          </p>
+        </div>
+      </div>
+
+      <!-- Seção "The Code" -->
+      <div class="large-box">
+        <div class="text-container">
+          <h2>The Code</h2>
+
+          <h3>Key Features</h3>
+          <li>
+            User Authentication: Users can sign up and update their personal
+            information.
+          </li>
+          <li>
+            Movie Information: Access detailed information about movies,
+            directors, and genres.
+          </li>
+          <li>
+            Favorite Movies: Users can add movies to their list of favorites.
+          </li>
+          <li>JWT Authentication for secure authentication.</li>
+          <li>Express.js: Built with Express for handling API requests</li>
+          <li>Mongoose: Used for interacting with MongoDB</li>
+
+          <h3>Technologies</h3>
+
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB (via Mongoose)</li>
+          <li>JWT (JSON Web Token) for authentication</li>
+          <li>Passport.js for handling authentication strategies</li>
+          <li>bcrypt for password hashing</li>
+          <li>dotenv for managing environment variables</li>
+          <li>body-parser for parsing incoming request bodies</li>
+          <li>cors for handling cross-origin requests</li>
+          <li>morgan for logging HTTP requests</li>
+          <li>express-validator for validating input data</li>
+
+          <h2>Challenges & Solutions</h2>
+
+          <p>
+            Alright, so picture me confidently opening Postman, ready to test my API like a pro. I type in the endpoint, hit send, and—access denied. No problem, just a small hiccup, right? I tweak a few things, try again… nope. My API is basically ghosting me.
+
+            Turns out, JWT authentication was standing at the door, arms crossed, refusing to let me in. And Postman? Let’s just say we weren’t exactly on speaking terms. I fumbled around, trying every possible button and header configuration like a lost tourist pressing random elevator buttons. The real kicker? I had only actually figured out JWT properly in another project—after already building this API.
+            
+            Eventually, I cracked the code, got Postman to cooperate, and finally accessed my own endpoints. Moral of the story? Sometimes, the hardest part of building an API isn’t writing it—it’s convincing Postman to talk to it.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Enlarged Images -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Renata Hoffmann. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
