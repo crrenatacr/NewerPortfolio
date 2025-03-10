@@ -569,6 +569,8 @@ footer p {
 .grid_contact_item {
   background-color: transparent;
   justify-content: space-around;
+  align-items: center;
+  
 
   padding: 20px;
   border-radius: 10px;
@@ -601,7 +603,8 @@ footer p {
   font-size: 1rem;
   border: 1px solid #ff3d3d;
   border-radius: 5px;
-}
+  box-shadow: #1c1c1c 5px 5px; 
+  }
 
 .contact-form button {
   padding: 10px;
@@ -615,6 +618,8 @@ footer p {
 
 .contact-form button:hover {
   background-color: #ff3d3d;
+  transform: scale3d(1.1, 1.1, 1.2);
+  box-shadow: #000000 5px 5px;
 
 }
 
